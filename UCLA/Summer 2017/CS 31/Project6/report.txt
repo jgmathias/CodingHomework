@@ -1,0 +1,8 @@
+James Mathias
+CS 31 Summer Session A
+Project 6 Report
+8/18/2017
+
+a.	This assignment was straitforward; just filling in the missing pieces.
+
+b.	I "played" the program multiple times, both winning ang losing against the computer.

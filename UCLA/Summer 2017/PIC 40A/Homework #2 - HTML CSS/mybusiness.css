@@ -1,0 +1,113 @@
+
+body{
+	background-color: cyan;
+	font-family: serif;
+	}
+
+#heading {
+	text-align: center;
+	font-weight: normal;
+	}
+
+#heading h1 {
+	font-size: 300%;
+	font-weight: bold;
+	}
+
+#heading h2,blockquote{
+	font-style: italic;
+	}
+
+h3 {
+	font-family: sans-serif;
+	}
+
+#sidebar {
+	background-color: green;
+	width: 200px;
+	height: 1000px;
+	float: left;
+	padding-top: 2px;
+	padding-right: 15px;
+	padding-bottom: 2px;
+	padding-left: 15px;
+	}
+
+#content {
+	float: none;
+	padding-top: 2px;
+	padding-right: 15px;
+	padding-bottom: 2px;
+	padding-left: 15px;
+	}
+
+#dropmenu{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	}
+
+#navbar{
+	margin: 0;
+	padding: 0;
+	height: 10px;
+	clear: both;
+	}
+
+#navbar li {
+	list-style: none;
+	float: left;
+	}
+
+#navbar li a {
+	display: block;
+	padding: 10px;
+	width: 10em;
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	}
+
+#navbar li ul {
+	display: none; 
+	width: 10em;
+	background-color: black;
+	}
+
+#navbar li:hover ul, #navbar li.hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	}
+
+#navbar li:hover li, #navbar li.hover li {
+	float: none;
+	}
+
+#navbar li:hover li a, #navbar li.hover li a {
+	background-color: black;
+	color: white;
+	}
+
+#navbar li li a:hover {
+	background-color: black;
+	}
+
+#products{border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	font-family: Verdana;
+	}
+
+#footer {
+	clear: both;
+	text-align: center;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	background-color: blue;
+	font-size: 150%;
+	}

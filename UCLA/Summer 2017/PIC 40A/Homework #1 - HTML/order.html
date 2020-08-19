@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<meta name="author" content="James Mathias"/>
+		<meta name="description" content="New Buisness Order Page"/>
+		<meta name="keywords" content="math, homework"/>
+		<meta name="copyright" content="James Gasper Mathias"/>
+		<title>M.A.T.H.&copy; Order Form</title>
+	</head>
+
+	<body>
+		
+		<h1>M.A.T.H.<sup>&copy;</sup></h1>
+		<h2>Order Form</h2>
+		
+		<form action="#" method="post">
+			
+			<fieldset><legend><b>Customer Information</b></legend>
+				Name: <input type="text" name="name"/><br/>
+				Street Address: <input type="text" name="streetaddress"/><br/>
+				City: <input type="text" name="city"/><br/>
+				State: <input type="text" name="state"/><br/>
+				Zip Code: <input type="text" name="zipcode"/><br/>
+				E-mail: <input type="text" name="email"/>
+			</fieldset>
+			
+			<fieldset><legend><b>Order Information</b></legend>
+				What is the topic of the assignment you would like to purchase? <em>(More topics coming soon!)</em><br/>
+					Algebra I<input type="radio" name="lisubjectst1" value="s1"/>
+					Algebra II<input type="radio" name="subject" value="s2"/>
+					Calculus I<input type="radio" name="subject" value="s3"/>
+					Calculus II<input type="radio" name="subject" value="s4"/>
+					Calculus III<input type="radio" name="subject" value="s5"/><br/>
+				<input type="checkbox" name="update" value="a"/>Check to be sent notifications when we update the topics or products that we offer.<br/>
+				<br/>
+			
+				<table border="1">
+					<tr>
+						<th>Product</th>
+						<th>Decsription</th> 
+						<th>Price</th>
+						<th>Quantity</th>
+					</tr>
+					<tr>
+						<td>Base</td>
+						<td>Base Homework Assignment Solutions (limited to 20 questions)</td> 
+						<td align="right">$9.99</td>
+						<td>1<input type="radio" name="list" value="a1"/>
+							2<input type="radio" name="list" value="a2"/>
+							3<input type="radio" name="list" value="a3"/>
+							4<input type="radio" name="list" value="a4"/></td>
+					</tr>
+					<tr>
+						<td>Base w/ errors</td>
+						<td>Base Assignment with minor errors on about 10% of answers</td> 
+						<td align="right">$14.99</td>
+						<td>1<input type="radio" name="list" value="b1"/>
+							2<input type="radio" name="list" value="b2"/>
+							3<input type="radio" name="list" value="b3"/></td>
+					</tr>
+					<tr>
+						<td>Base in LaTeX</td>
+						<td>Base Assignment written and formatted properly in LaTeX</td> 
+						<td align="right">$14.99</td>
+						<td>1<input type="radio" name="list" value="c1"/>
+							2<input type="radio" name="list" value="c2"/>
+							3<input type="radio" name="list" value="c3"/></td>
+					</tr>
+					<tr>
+						<td>Base w/ errors in LaTeX</td>
+						<td>Base assignment with minor errors and written in LaTeX</td> 
+						<td align="right">$19.99</td>
+						<td>1<input type="radio" name="list" value="d1"/>
+							2<input type="radio" name="list" value="d2"/></td>
+					</tr>
+					<tr>
+						<td>XL</td>
+						<td>Solutions for up to 100 questions (free errors and LaTeX formatting)</td> 
+						<td align="right">$49.99</td>
+						<td>1<input type="radio" name="list" value="e1"/></td>
+					</tr>
+				</table>
+				<br/>
+			
+				<b>Credit Card:</b><br/>
+					Type: <select name="cardtype">
+						<option value="default">Choose Card Type</option>
+						<option value="amex">American Express</option>
+						<option value="disc">Discover</option>
+						<option value="mc">MasterCard</option>
+						<option value="visa">Visa</option></select><br/>
+					Number: <input type="password" name="cardnumber"/><br/>
+					Security Code: <input type="password" name="csc"/><br/>
+					Expiration Date:<select name="month">
+						<option value="default">Month</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option></select>
+						/
+						<select name="year">
+						<option value="default">Year</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option></select>
+			</fieldset>
+			
+			<fieldset><legend><b>Clear or Send</b></legend>
+				<input type="reset" value="Clear"/>
+				<input type="submit" value="Send"/>
+			</fieldset>
+			
+		</form>
+		
+		<p><a href="mybusiness.html">Return to Home Page</a><br/></p>
+		
+		<p><a href="http://validator.w3.org/check?uri=referer"><img width="88" height="31" alt="Valid XHTML 1.1" src="http://www.w3.org/Icons/valid-xhtml11"/></a></p>
+		
+	</body>
+	
+</html>

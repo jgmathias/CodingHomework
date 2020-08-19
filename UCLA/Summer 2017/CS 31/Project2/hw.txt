@@ -1,0 +1,136 @@
+James Mathias
+CS 31 Summer Session A
+Project 2 Accompanying Homework
+7/12/2017
+
+
+1.	What is the output produced by the following program segment? Don't just run it — trace through it and figure it out by hand (which is a skill you'll need for the exams).
+	string endline = "endl";
+	cout << "endl";
+	cout << endline;
+	cout << endl;
+	cout << "endline";
+	
+		endlendl
+		endline
+
+2.	Consider the following program:
+	#include <iostream>
+	using namespace std;
+
+	int main()
+	{
+	    int len;
+
+	    cout << "Enter a number: ";
+	    cin >> len;
+
+	    for (int i = 0; i < len; i++)
+	    {
+		    for (int j = i+1; j < len; j++)
+		    {
+		        cout << " ";
+		    }
+		    cout << "#" << endl;
+	    }
+	}
+	In a brief, simple English sentence, state what this program does (e.g. "It prints a picture of an aqueduct."). Again, figure this out by hand.
+	
+		This progam prints a series of lines.
+		Each line has a number of spaces that end with a "#".
+		The first line has "len"-1 spaces, the next has one less, the third has one less than the second, and so on.
+		This continues on for "len" lines, and the last line will have no spaces and only a "#".
+
+3.	Copy the program in problem 2 and change it so that for any input number, the changed program produces exactly the same output as the original, but the changed program uses a while loop instead of a for loop for the inner loop.
+	
+		#include <iostream>
+		using namespace std;
+		
+		int main()
+		{
+			int len;
+		
+			cout << "Enter a number: ";
+			cin >> len;
+		
+			for (int i = 0; i < len; i++)
+			{
+				int j = i+1;
+				while (j < len)
+				{
+					cout << " ";
+					j++;
+				}
+				cout << "#" << endl;
+			}
+		}
+
+4.	Copy the program you wrote for problem 3 and change it so that for any input number, it produces exactly the same output, but uses a do-while loop instead of a for loop for the outer loop. Be careful! (Hint: How does it behave if len is not positive?) You may need to add a little additional code to make sure the program behaves identically to the program in problem 3.
+	
+		#include <iostream>
+		using namespace std;
+		int main()
+		{
+			int len;
+			
+			cout << "Enter a number: ";
+			cin >> len;
+			
+			int i = 0;
+			if(len<=i)
+				{}	    
+			else
+			{
+				do
+				{
+					int j = i+1;
+					while (j < len)
+					{
+						cout << " ";
+						j++;
+					}
+					cout << "#" << endl;
+					i++;
+				}
+				while(i < len);
+			}
+		}
+
+
+5.	Assume weekday has been previously declared as an int and given a meaningful value. Write a switch statement that for any value of weekday, produces exactly the same output as the following if statement.
+	if (weekday == 1)
+		cout << "rainy days and mondays get me down";
+	else if (weekday == 2)
+		cout << "ruby tuesday";
+	else if (weekday == 6  ||  weekday == 7)
+		cout << "wonderful weekend";
+	else
+		cout << "regular day";
+	
+		#include <iostream>
+		using namespace std;
+		
+		int main()
+		{
+			int weekday;
+			cin >> weekday;
+			
+			switch(weekday)  
+			{  
+				case 1:
+					cout << "rainy days and mondays get me down" << endl;
+					break;
+				case 2:
+					cout << "ruby tuesday" << endl;
+					break;
+				case 6:
+					cout << "wonderful weekend" << endl;
+					break;
+				case 7:
+					cout << "wonderful weekend" << endl;
+					break;
+				default:
+				cout << "regular weekday" << endl;
+			}
+		}
+

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8"/>
+		<title>James's Calculator</title>
+		
+		<script type="text/javascript"> 
+			
+			var num1 = "";
+			var num2 = ""
+			var b1 = "";
+			var b2 = "";
+			var b3 = "";
+			
+			function number(n)
+			{
+				if (b1 != "")
+				{
+					document.getElementById("display").value = "";
+					b2 = b1;
+					b1 = "";
+				}
+				document.getElementById("display").value += n;
+			}
+			
+			function binary(b) 
+			{ 
+				if (b1 == "" && b3 != "")
+				{
+					num2 = document.getElementById("display").value;
+					document.getElementById("display").value = eval(num1 + b2 + '(' + num2 + ')');
+				}
+				num1 = document.getElementById("display").value;
+				b1 = b;
+				b2 = "";
+				b3 = "1";
+				num2 = "";
+			}
+			
+			function equal() 
+			{ 
+				if (num2 == "" || b2 == "")
+				{
+					num2 = document.getElementById("display").value;
+				}
+				if (b2 != "")
+				{
+					document.getElementById("display").value = eval(num1 + b2 + '(' + num2 + ')');
+				}
+				num1 = document.getElementById("display").value;
+				b3 = "";
+			}
+			
+			function neg()
+			{
+				var x = document.getElementById("display").value;
+				if (b1 != "" || x == "")
+				{
+					document.getElementById("display").value = '-';
+					b2 = b1;
+					b1 = "";
+				}
+				else
+				{
+					if (x.charAt(0) == '-')
+					{
+						document.getElementById("display").value = x.substr(1);
+					}
+					else
+					{
+						document.getElementById("display").value = '-' + x;
+					}
+				}
+			}
+			
+			function decimal()
+			{
+				var d = document.getElementById("display").value;
+				if (d == '-')
+				{
+					document.getElementById("display").value = "-0.";
+				}
+				else if (b1 != "" || d == "")
+				{
+					document.getElementById("display").value = "0.";
+					b2 = b1;
+					b1 = "";
+				}
+				else if (d.indexOf('.') < 0)
+				{
+					document.getElementById("display").value = d + '.';
+				}
+				
+			}
+			
+			function c()
+			{
+				document.getElementById("display").value = "";
+				num1 = "";
+				num2 = ""
+				b1 = "";
+				b2 = "";
+				b3 = "";
+			}
+			
+		</script>
+		
+	</head>
+	
+	<body>
+		
+		<h1>Simple Calculator</h1>
+		
+		<form action="" method="get">
+			<p><input type="text" id="display"/></p>
+		</form>
+		
+		<form action="" method="get">
+			
+			<table border="1">
+				<tr>
+					<td><input type="button" value='/' onclick="binary('/')"/></td>
+					<td><input type="button" value='*' onclick="binary('*')"/></td>
+					<td><input type="button" value='neg' onclick="neg()"/></td>
+					<td><input type="button" value='7' onclick="number('7')"/></td>
+					<td><input type="button" value='8' onclick="number('8')"/></td> 
+					<td><input type="button" value='9' onclick="number('9')"/></td>
+				</tr>
+				<tr>
+					<td><input type="button" value='-' onclick="binary('-')"/></td>
+					<td><input type="button" value='+' onclick="binary('+')"/></td>
+					<td><input type="button" value='.' onclick="decimal()"/></td>
+					<td><input type="button" value='4' onclick="number('4')"/></td>
+					<td><input type="button" value='5' onclick="number('5')"/></td> 
+					<td><input type="button" value='6' onclick="number('6')"/></td>
+				</tr>
+				<tr>
+					<td><input type="button" value='=' onclick="equal()"/></td>
+					<td><input type="button" value='C' onclick="c()"/></td>
+					<td><input type="button" value='0' onclick="number('0')"/></td> 
+					<td><input type="button" value='1' onclick="number('1')"/></td>
+					<td><input type="button" value='2' onclick="number('2')"/></td> 
+					<td><input type="button" value='3' onclick="number('3')"/></td>
+				</tr>
+			</table>
+		
+		</form>
+		
+		<p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /></a></p>
+		
+	</body>
+	
+</html>

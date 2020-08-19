@@ -1,0 +1,8 @@
+James Mathias
+CS 31 Summer Session A
+Project 4 Report
+8/2/2017
+
+a.	The "countIntegers" function was tricky to create, especially how to count the amount of integers. "rotateRight" was very tricky because of different moving parts; I got it to work after using two temp strings instead of just one. Also the "divide" function was wierd. I used two temp string arrays to hold the values while dividing them, and then after dividing, I moved the sorted values back onto the original string.
+
+b.	The test data used is in the "main" function. For each function, I used different strings to test it along with different "n" values. I often set "n" to be zero, which usually gave slightly different returns.

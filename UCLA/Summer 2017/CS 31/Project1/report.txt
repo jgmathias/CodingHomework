@@ -1,0 +1,24 @@
+James Mathias
+CS 31 Summer Session A
+6/28/2017
+
+Project 1 Report
+
+5.	inputs:	5.1, apple, -5
+	The program outputed "0", "nan" and negative percentages.
+
+6.	I replaced:
+		double pctFake = 100.0 * fakePosts / postsReviewed;
+		double pctReal = 100.0 * realPosts / postsReviewed;
+	with:
+		double pctFake = fakePosts / postsReviewed * 100.0;
+		double pctReal = realPosts / postsReviewed * 100.0;
+	
+	Since "fakePosts", "realPosts", and "postsReviewed" are all integers,
+	we have integer division FIRST before multiplying by 100.0.
+	Since (with expected inputs) "postsReviewed" is greater than "fakePosts" and "realPosts",
+	the integer division will result in 0, and "pctFake" and "pctReal" will always be 0.0.
+
+7.	I removed some semicolons 
+	and "using namespace std;"
+	The compiler needs both of these to compile properly.

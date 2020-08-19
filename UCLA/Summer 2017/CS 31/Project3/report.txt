@@ -1,0 +1,52 @@
+James Mathias
+CS 31 Summer Session A
+Project 3 Report
+7/24/2017
+
+a.	I often mix up what I expect for "orders.length()" and for "orders[i]". It took me a while to realize that the first character was denoted by "orders[0]", not "orders[1]".
+
+b.	I found it easier to validate the input at the same time as determining the quantity of each order. And so, my "isValidOrderString" and "cost" functions are the same (except for the return).
+
+	main:	user enters "order"
+		if (order == quit)
+			{do nothing}
+		else
+			{
+			bool a = isValidOrderString(order)
+			if (a == true)
+				{output: The cost is "cost(order)".}
+			else
+				{output: Invalid order}
+			}
+	
+	isValidOrderString/cost(order):
+		bool b = 1;
+		int order1 = 0;
+		int order2 = 0;
+		int order3 = 0;
+		int n = 0;
+		
+		for (i=0; i <= order.length; i++)
+			{
+			if(order[i] is a number)
+				{change "n" to match order[i]}
+			else if(order[i] == ":")
+				{
+				if(order[i+1] == "1")
+					{order1 += n}
+				else if(order[i+1] == "2")
+					{order2 += n}
+				else if(order[i+1] == "3")
+					{order3 += n}
+				i++
+				}
+			}
+		//if there are any unexpected inputs, then b = 0 and break
+		if(order1+order2+order3>50)
+			{b=0}
+		
+		return "b" for "isValidOrderString"
+		return "order1 * 7.40 + order2 * 6.25 + order3 * 5.95" for "cost"
+
+
+c.	I tested all the values shown in the "Introduction" section on the assignment page in CCLE. I also tested ":2", "1:1_" and "03:1". This last test value passes, while the first two fail.

@@ -1,0 +1,8 @@
+James Mathias
+CS 31 Summer Session A
+Project 5 Report
+8/8/2017
+
+a.	I wasn't able to completely debug this program.
+
+b.	I just copied the asserts that were on CCLE into "main.cpp".

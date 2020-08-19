@@ -1,0 +1,39 @@
+cout.precision(x)
+following numerical output will display to x decimal places
+
+getline(cin, x)
+includes spaces in the string
+
+if(test statement)
+{statement if true;}
+else if(test statement)
+{statement if true;}
+else
+{default statement;}
+
+while(test statement)
+{statement if true;
+iterative statement;}
+
+do
+{statement;
+iterative statement;}
+while(test statement);
+
+static_cast<int>(value)
+
+for(initial; test; iterate)
+{statement;}
+
+break;
+exits whatevever loop or function
+
+continue;
+skips body of loop and jumps to next increment
+
+
+#include <cmath>
+use for most basic math functions (system file)
+
+#include "myfile.h"
+user created file

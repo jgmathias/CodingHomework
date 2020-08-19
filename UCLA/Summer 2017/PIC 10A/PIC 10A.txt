@@ -1,0 +1,66 @@
+number types:
+int, short, long, long long, float, double, long double, bool
+
+other types:
+char, string
+
+x/y
+if both x and y are integers, then remainder is discarded
+
+x%y
+mod operator
+
+shorthand
+x++		x=x+1
+x- -		x=x-1
+x+=n		x=x+n
+x-=n		x=x-n
+x*=n		x=x*n
+x/=n		x=x/n
+
+const int x=n;
+//prevents x from ever being changed
+
+cin >> x;
+input value for x
+
+cout << x;
+outputs x
+
+cout << endl;
+cout << "\n";
+end line
+
+sin(x)		sine of x
+cos(x)		cosine of x
+tan(x)		tangent of x
+sqrt(x)		square root
+abs(x)		absolute value
+fmax(x,y)	max of two values
+min(x,y)	min of two values
+pow(x,y)	x to the power of y
+exp(x)		e to the power of x
+log(x)		ln of x
+log10(x)	log base 10 of x
+
+string.length()
+length of string
+
+string.substr(x)
+substring from position x
+
+string.substr(x,y)
+substring from position x of length y
+
+#include<iomanip>
+
+cout<<setw(x)<< y
+column width is x
+
+cout << fixed << setprecision(x)
+uses x decimal places
+
+#include<ctime>
+#include<cstdlib>
+srand(time(0))
+int a = rand()
