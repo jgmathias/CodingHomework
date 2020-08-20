@@ -1,0 +1,103 @@
+#include <iostream>
+#include <typeinfo>
+#include <string>
+using namespace std;
+
+#include "Date.h"
+#include "Time.h"
+#include "Appointment.h"
+
+class Session: public Appointment
+{
+private:
+	string client_id;
+	string fname;
+	string lname;
+	double hourly_charge;
+public:
+	Session();
+	~Session();
+	void getsession();
+	void read();
+	void printsession();
+	string get_id();
+	string get_fname();
+	string get_lname();
+	double calc_charge();
+};
+
+Session::Session()
+{
+
+}
+
+Session::~Session()
+{
+
+}
+
+void Session::getsession()
+{
+	get();
+
+	cout << "Enter client's ID: ";
+	cin >> client_id;
+
+	cout << "Enter client's first name: ";
+	cin >> fname;
+
+	cout << "Enter client's last name: ";
+	cin >> lname;
+
+	cout << "Enter hourly Charge: ";
+	cin >> hourly_charge;
+}
+
+void Session::read()
+{
+
+}
+
+void Session::printsession()
+{
+	print();
+
+	cout << endl;
+	cout << "Client ID: ";
+	cout << client_id;
+
+	cout << endl;
+	cout << "First name: ";
+	cout << fname;
+
+	cout << endl;
+	cout << "Last name: ";
+	cout << lname;
+
+	cout << endl;
+	cout << "Hourly Charge: ";
+	cout << hourly_charge;
+}
+
+string Session::get_id()
+{
+	return client_id;
+}
+
+string Session::get_fname()
+{
+	return fname;
+}
+
+string Session::get_lname()
+{
+	return lname;
+}
+
+double Session::calc_charge()
+{
+	Time length = app_length();
+	double chargeh = hourly_charge * length.get_hour();
+	double chargem = hourly_charge * length.get_minute() / 60;
+	return (chargeh + chargem);
+}

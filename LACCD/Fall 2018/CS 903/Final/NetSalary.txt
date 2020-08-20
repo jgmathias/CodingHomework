@@ -1,0 +1,16 @@
+Last Name   First Name  Net Salary
+==================================
+Jones		Tom			1400000.38	
+Thompson	Frank		  70000.63	
+Jackson		Tom			 105000.61	
+Jackson		Michael		  54750.57	
+Johnson		Sara		  25550.26	
+McCoy		Josh		  76200.88	
+Freeman		Michael		  85380.90	
+Schaub		Matt		 212160.63	
+Rivers		Philip		  76160.61	
+Hassel		Matt		 366110.74	
+Beck		Jimmy		 157996.03	
+Clausen		Joe			 217000.07	
+Flacco		Kyle		  30000.15	
+Orton		Jason		  44053.38	

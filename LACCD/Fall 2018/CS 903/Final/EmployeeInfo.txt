@@ -1,0 +1,16 @@
+LastName    FirstName   State       Salary
+========================================================
+Jones       Tom         CA          2000000.54  
+Thompson    Frank       NV          100000.90
+Jackson     Tom         AZ          150000.87  
+Jackson     Michael     AR          75000.78 
+Johnson     Sara        AK          35000.35
+McCoy       Josh        FL          112060.12 
+Freeman     Michael     KY          125560.15 
+Schaub      Matt        MO          312000.93  
+Rivers      Philip      LA          112000.89  
+Hassel      Matt        WA          523015.34 
+Beck        Jimmy       MD          232347.10 
+Clausen     Joe         CA          310000.10 
+Flacco      Kyle        NV          40000.20 
+Orton       Jason       ME          60347.10 
