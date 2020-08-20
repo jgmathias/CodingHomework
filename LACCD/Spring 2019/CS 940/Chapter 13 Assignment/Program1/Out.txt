@@ -1,0 +1,6 @@
+Normal sentence.
+Reverse capitalization.
+No capital letters.
+All capital letters.
+Capitalized the first letter of each word.
+Two sentences. On one line.

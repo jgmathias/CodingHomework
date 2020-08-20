@@ -1,0 +1,6 @@
+Normal sentence.
+rEVERSE CAPITALIZATION.
+no capital letters.
+ALL CAPITAL LETTERS.
+Capitalized The First Letter Of Each Word.
+two sentences. on one line.
